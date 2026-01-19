@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~*~ EMMA'S AWESOME HOMEPAGE ~*~</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: #000080 url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+            background-attachment: fixed;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #FFFF00;
+            cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyElEQVQ4jWNgoBAwUqifAYqBDOb///8zMDIyMjAwMDA8fvz4P1TDMEADNQAAAP//AwBQTgRo7+AYvAAAAABJRU5ErkJggg=='), auto;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #FF69B4, #00FFFF);
+            border: 5px ridge gold;
+            animation: rainbow-border 2s infinite;
+        }
+        
+        @keyframes rainbow-border {
+            0% { border-color: red; }
+            14% { border-color: orange; }
+            28% { border-color: yellow; }
+            42% { border-color: green; }
+            57% { border-color: blue; }
+            71% { border-color: indigo; }
+            85% { border-color: violet; }
+            100% { border-color: red; }
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            color: #FF00FF;
+            text-shadow: 3px 3px #00FFFF, 6px 6px #FFFF00;
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+        
+        .marquee {
+            background: #FFFF00;
+            color: #FF0000;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+            border: 3px dashed #000;
+        }
+        
+        .construction {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .construction img {
+            width: 100px;
+            animation: spin 2s linear infinite;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .content {
+            background: #FFFFFF;
+            padding: 20px;
+            margin: 20px 0;
+            border: 3px solid #000;
+            color: #000000;
+            font-size: 16px;
+        }
+        
+        .content h2 {
+            color: #FF0000;
+            font-size: 32px;
+            text-decoration: underline;
+        }
+        
+        .counter {
+            background: #000;
+            color: #00FF00;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            border: 2px solid #00FF00;
+        }
+        
+        .guestbook {
+            background: #FFCC00;
+            padding: 15px;
+            margin: 20px 0;
+            border: 3px double #000;
+            text-align: center;
+        }
+        
+        .guestbook a {
+            color: #FF0000;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .guestbook a:hover {
+            color: #0000FF;
+            text-decoration: underline;
+        }
+        
+        .webring {
+            background: #C0C0C0;
+            padding: 10px;
+            text-align: center;
+            border: 2px outset #808080;
+            margin: 20px 0;
+        }
+        
+        .fire-text {
+            color: #FF4500;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 0 0 10px #FF0000;
+            animation: fire 0.5s infinite alternate;
+        }
+        
+        @keyframes fire {
+            from { text-shadow: 0 0 10px #FF0000, 0 0 20px #FF4500; }
+            to { text-shadow: 0 0 20px #FF0000, 0 0 30px #FF4500; }
+        }
+        
+        .sparkle {
+            display: inline-block;
+            animation: sparkle 1s infinite;
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+        
+        img.floaty {
+            position: fixed;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .best-viewed {
+            text-align: center;
+            background: #000;
+            color: #00FF00;
+            padding: 5px;
+            font-size: 12px;
+        }
+        
+        a {
+            color: #0000FF;
+            text-decoration: underline;
+        }
+        
+        a:visited {
+            color: #800080;
+        }
+        
+        .blink {
+            animation: blink 1s infinite;
+        }
+        
+        hr {
+            border: none;
+            height: 3px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        }
+    </style>
+</head>
+<body>
+    <div class="best-viewed">
+        ★彡 BEST VIEWED IN NETSCAPE NAVIGATOR 4.0 AT 800x600 RESOLUTION 彡★
+    </div>
+    
+    <div class="container">
+        <h1>
+            <span class="sparkle">~</span>
+            <span class="sparkle">*</span>
+            <span class="sparkle">~</span>
+            EMMA'S AWESOME HOMEPAGE
+            <span class="sparkle">~</span>
+            <span class="sparkle">*</span>
+            <span class="sparkle">~</span>
+        </h1>
+        
+        <div class="construction">
+            <p class="fire-text">🔥 UNDER CONSTRUCTION 🔥</p>
+            <p style="font-size: 20px;">⚠️ CAUTION ⚠️</p>
+        </div>
+        
+        <marquee class="marquee" behavior="scroll" direction="left">
+            ★ WELCOME TO MY SITE! ★ EMMA GALLEGOS ★ JOURNALIST ★ BAKERSFIELD REPRESENT ★ EDUCATION REPORTER ★ CHECK OUT MY STORIES ★ SIGN MY GUESTBOOK! ★
+        </marquee>
+        
+        <hr>
+        
+        <div class="counter">
+            <p>✨ YOU ARE VISITOR NUMBER: <span class="blink">000420</span> ✨</p>
+        </div>
+        
+        <div class="content">
+            <h2>📰 ABOUT ME 📰</h2>
+            <p><b>Hiiii!</b> Welcome to my <i>totally rad</i> website!!! My name is <font color="red"><b>EMMA GALLEGOS</b></font> and I'm an <u>equity reporter</u> for EdSource!!! I cover education in California!!! 🎓</p>
+            <br>
+            <p><b>I'm based in BAKERSFIELD, CALIFORNIA!!! 🌴☀️</b></p>
+            <br>
+            <p class="fire-text">⭐ I WRITE ABOUT IMPORTANT STUFF!!! ⭐</p>
+        </div>
+        
+        <marquee class="marquee" behavior="alternate" direction="right">
+            ✨✨✨ CHECK OUT MY STORIES BELOW ✨✨✨
+        </marquee>
+        
+        <div class="content">
+            <h2>🔥 MY TOTALLY AWESOME STORIES!!! 🔥</h2>
+            <ul>
+                <li><a href="https://edsource.org/2025/office-for-civil-rights-department-of-education-california/735364" target="_blank">🌟 Students with discrimination complaints left in limbo!!!</a></li>
+                <li><a href="https://edsource.org/2024/most-california-high-school-seniors-shut-out-of-even-applying-to-the-states-universities/705635" target="_blank">📚 Most CA high school seniors shut out of universities!!!</a></li>
+                <li><a href="https://edsource.org/2022/cities-and-towns-across-california-only-get-the-libraries-they-can-afford/677969" target="_blank">📖 Cities and towns only get the libraries they can afford!!!</a></li>
+                <li><a href="https://edsource.org/2024/3-out-of-10-california-adults-struggle-with-basic-reading/710702" target="_blank">✏️ 3 out of 10 California adults struggle with reading!!!</a></li>
+                <li><a href="https://edsource.org/2025/california-teacher-of-the-year/747464" target="_blank">👩‍🏫 Teacher embraces dwarfism as strength!!!</a></li>
+            </ul>
+        </div>
+        
+        <hr>
+        
+        <div class="guestbook">
+            <p class="fire-text">✍️ PLEASE SIGN MY GUESTBOOK!!! ✍️</p>
+            <a href="mailto:emma.g.gallegos@gmail.com">📧 CLICK HERE TO EMAIL ME!!! 📧</a>
+        </div>
+        
+        <div class="webring">
+            <p><b>[ EDUCATION REPORTER WEBRING ]</b></p>
+            <a href="index.html">&lt;&lt; PREV</a> | 
+            <a href="index.html">RANDOM</a> | 
+            <a href="index.html">NEXT &gt;&gt;</a>
+        </div>
+        
+        <marquee class="marquee" behavior="scroll" direction="right" scrollamount="15">
+            🎵 NOW PLAYING: "ALL STAR" BY SMASH MOUTH 🎵
+        </marquee>
+        
+        <div class="content" style="text-align: center;">
+            <h2>🔗 COOL LINKS!!! 🔗</h2>
+            <p><a href="https://edsource.org/author/egallegos" target="_blank">🌐 MY EDSOURCE PAGE</a></p>
+            <p><a href="https://www.facebook.com/emmagallegos/" target="_blank">📘 FACEBOOK</a></p>
+            <p><a href="https://twitter.com/emmagallegos" target="_blank">🐦 TWITTER</a></p>
+            <p><a href="https://www.linkedin.com/in/emma-gallegos-652ab9174/" target="_blank">💼 LINKEDIN</a></p>
+            <br>
+            <p class="fire-text blink">🏠 <a href="index.html">BACK TO NORMAL SITE</a> 🏠</p>
+        </div>
+        
+        <hr>
+        
+        <div style="text-align: center; padding: 20px; background: #000; color: #0F0;">
+            <p>⚡ POWERED BY GEOCITIES ⚡</p>
+            <p style="font-size: 10px;">This site is optimized for Internet Explorer 5.0</p>
+            <p style="font-size: 10px;">Last Updated: 1999</p>
+        </div>
+    </div>
+</body>
+</html>

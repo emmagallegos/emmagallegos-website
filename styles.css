@@ -268,21 +268,6 @@ body {
     padding: 0 2rem;
 }
 
-/* Three Column Layout: Featured Stories (2 cols) + Sidebar (1 col) */
-.three-column-layout {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem;
-}
-
-.featured-stories-grid {
-    grid-column: 1;
-}
-
-.latest-sidebar {
-    grid-column: 2;
-}
-
 .section-heading {
     font-family: var(--font-serif);
     font-size: 1.75rem;
@@ -297,7 +282,7 @@ body {
 .two-column-stories {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+    gap: 3rem;
 }
 
 .story-column {
@@ -305,64 +290,24 @@ body {
     flex-direction: column;
 }
 
-/* Latest Sidebar Sticky */
-.latest-sticky {
-    position: sticky;
-    top: 100px;
+/* EdSource Link */
+.edsource-link {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
 }
 
-.latest-story {
-    padding: 1.5rem 0;
-    border-bottom: 1px solid var(--color-border);
-    animation: fadeIn 0.6s ease both;
-}
-
-.latest-story:last-child {
-    border-bottom: none;
-}
-
-.latest-story-title {
-    font-family: var(--font-serif);
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    line-height: 1.4;
-}
-
-.latest-story-title a {
-    color: var(--color-primary);
+.edsource-link a {
+    color: var(--color-accent);
     text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
-.latest-story-title a:hover {
-    color: var(--color-accent);
-}
-
-.latest-story-date {
-    font-size: 0.8rem;
-    color: var(--color-secondary);
-}
-
-.loading-text {
-    color: var(--color-secondary);
-    font-style: italic;
-}
-
-.error-message {
-    padding: 1.5rem;
-    background: var(--color-bg-alt);
-    border-radius: 4px;
-    border: 1px solid var(--color-border);
-}
-
-.error-message a {
-    color: var(--color-accent);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.error-message a:hover {
+.edsource-link a:hover {
+    color: var(--color-accent-hover);
     text-decoration: underline;
 }
 
@@ -390,8 +335,8 @@ body {
 }
 
 .story-thumb {
-    width: 200px;
-    height: 140px;
+    width: 250px;
+    height: 170px;
     object-fit: cover;
     border-radius: 4px;
     flex-shrink: 0;
@@ -599,17 +544,9 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .three-column-layout {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-    
-    .latest-sticky {
-        position: static;
-    }
-    
     .two-column-stories {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
 

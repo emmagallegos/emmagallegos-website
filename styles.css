@@ -268,47 +268,21 @@ body {
     padding: 0 2rem;
 }
 
-.section-heading {
+.main-heading {
     font-family: var(--font-serif);
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     color: var(--color-primary);
     padding-bottom: 0.75rem;
     border-bottom: 3px solid var(--color-accent);
 }
 
-/* Two Columns for Featured Stories */
-.two-column-stories {
+/* Two Equal Columns */
+.two-columns-equal {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-}
-
-.story-column {
-    display: flex;
-    flex-direction: column;
-}
-
-/* EdSource Link */
-.edsource-link {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--color-border);
-    text-align: center;
-}
-
-.edsource-link a {
-    color: var(--color-accent);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-.edsource-link a:hover {
-    color: var(--color-accent-hover);
-    text-decoration: underline;
 }
 
 /* Story Cards with Thumbnails */
@@ -335,8 +309,8 @@ body {
 }
 
 .story-thumb {
-    width: 250px;
-    height: 170px;
+    width: 120px;
+    height: 80px;
     object-fit: cover;
     border-radius: 4px;
     flex-shrink: 0;
@@ -544,7 +518,7 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .two-column-stories {
+    .two-columns-equal {
         grid-template-columns: 1fr;
         gap: 2rem;
     }

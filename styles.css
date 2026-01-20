@@ -310,6 +310,7 @@ body {
 
 .story-thumb {
     width: 300px;
+    min-width: 300 px;
     height: 200px;
     object-fit: cover;
     border-radius: 4px;

@@ -309,9 +309,9 @@ body {
 }
 
 .story-thumb {
-    width: 300px;
-    min-width: 300 px;
-    height: 200px;
+    width: 200px;
+    min-width: 200 px;
+    height: 140px;
     object-fit: cover;
     border-radius: 4px;
     flex-shrink: 0;

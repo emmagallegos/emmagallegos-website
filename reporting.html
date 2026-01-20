@@ -9,9 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Override the gold border with gray */
-        .main-heading {
-            border-bottom: 3px solid #ccc;
+        /* Simple two-column grid for stories */
+        .stories-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .stories-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -37,132 +45,128 @@
 
         <section class="reporting-layout">
             <div class="container-wide">
-                <div class="two-columns-equal">
-                    <!-- Left Column -->
-                    <div class="column-left">
-                        <!-- Story 1 - Top Featured (July 2025) -->
-                        <article class="story-card-thumb featured-story">
-                            <img src="23337016321774-2048x1365.jpg" alt="Civil Rights" class="story-thumb" loading="lazy">
-                            <div class="story-content-thumb">
-                                <span class="story-tag">Civil Rights</span>
-                                <h3 class="story-title">
-                                    <a href="https://edsource.org/2025/office-for-civil-rights-department-of-education-california/735364" target="_blank" rel="noopener">
-                                        Students with discrimination complaints left in limbo, months after California civil rights office closed
-                                    </a>
-                                </h3>
-                                <p class="story-excerpt">The U.S. Supreme Court's decision to allow mass layoffs in the Department of Education stalls pending cases.</p>
-                                <span class="story-date">July 16, 2025</span>
-                            </div>
-                        </article>
+                <div class="stories-grid">
+                    
+                    <!-- 1. December 22, 2025 - Teacher of the Year -->
+                    <article class="story-card-thumb">
+                        <img src="heather3-2048x1536.jpg" alt="Teacher" class="story-thumb" loading="lazy">
+                        <div class="story-content-thumb">
+                            <span class="story-tag">Feature</span>
+                            <h3 class="story-title">
+                                <a href="https://edsource.org/2025/california-teacher-of-the-year/747464" target="_blank" rel="noopener">
+                                    Her dwarfism once scared her away from teaching — now it's her strength
+                                </a>
+                            </h3>
+                            <p class="story-excerpt">Heather Povinelli was named one of five California Teachers of the Year.</p>
+                            <span class="story-date">December 22, 2025</span>
+                        </div>
+                    </article>
 
-                        <!-- Story 2 - Teacher of the Year (December 2025) -->
-                        <article class="story-card-thumb">
-                            <img src="heather3-2048x1536.jpg" alt="Teacher" class="story-thumb" loading="lazy">
-                            <div class="story-content-thumb">
-                                <span class="story-tag">Feature</span>
-                                <h3 class="story-title">
-                                    <a href="https://edsource.org/2025/california-teacher-of-the-year/747464" target="_blank" rel="noopener">
-                                        Her dwarfism once scared her away from teaching — now it's her strength
-                                    </a>
-                                </h3>
-                                <p class="story-excerpt">Heather Povinelli was named one of five California Teachers of the Year.</p>
-                                <span class="story-date">December 22, 2025</span>
-                            </div>
-                        </article>
+                    <!-- 2. July 16, 2025 - Civil Rights -->
+                    <article class="story-card-thumb">
+                        <img src="23337016321774-2048x1365.jpg" alt="Civil Rights" class="story-thumb" loading="lazy">
+                        <div class="story-content-thumb">
+                            <span class="story-tag">Civil Rights</span>
+                            <h3 class="story-title">
+                                <a href="https://edsource.org/2025/office-for-civil-rights-department-of-education-california/735364" target="_blank" rel="noopener">
+                                    Students with discrimination complaints left in limbo, months after California civil rights office closed
+                                </a>
+                            </h3>
+                            <p class="story-excerpt">The U.S. Supreme Court's decision to allow mass layoffs in the Department of Education stalls pending cases.</p>
+                            <span class="story-date">July 16, 2025</span>
+                        </div>
+                    </article>
 
-                        <!-- Story 3 - Navy Nuclear Reactor (December 2024) -->
-                        <article class="story-card-thumb">
-                            <img src="image1-2048x1536.jpeg" alt="Navy veteran on aircraft carrier" class="story-thumb" loading="lazy">
-                            <div class="story-content-thumb">
-                                <span class="story-tag">College & Career</span>
-                                <h3 class="story-title">
-                                    <a href="https://edsource.org/2024/she-operated-a-nuclear-reactor-in-the-navy-but-her-college-made-her-take-introductory-chemistry/723779" target="_blank" rel="noopener">
-                                        She operated a nuclear reactor in the Navy. But her college made her take introductory chemistry.
-                                    </a>
-                                </h3>
-                                <p class="story-excerpt">When students start college later in life, they often bring unique knowledge and skills. California colleges are working on ways to award credit for learning outside the classroom.</p>
-                                <span class="story-date">December 18, 2024</span>
-                            </div>
-                        </article>
+                    <!-- 3. December 18, 2024 - Navy Nuclear Reactor -->
+                    <article class="story-card-thumb">
+                        <img src="image1-2048x1536.jpeg" alt="Navy veteran on aircraft carrier" class="story-thumb" loading="lazy">
+                        <div class="story-content-thumb">
+                            <span class="story-tag">College & Career</span>
+                            <h3 class="story-title">
+                                <a href="https://edsource.org/2024/she-operated-a-nuclear-reactor-in-the-navy-but-her-college-made-her-take-introductory-chemistry/723779" target="_blank" rel="noopener">
+                                    She operated a nuclear reactor in the Navy. But her college made her take introductory chemistry.
+                                </a>
+                            </h3>
+                            <p class="story-excerpt">When students start college later in life, they often bring unique knowledge and skills. California colleges are working on ways to award credit for learning outside the classroom.</p>
+                            <span class="story-date">December 18, 2024</span>
+                        </div>
+                    </article>
 
-                        <!-- Story 4 - A-G Requirements (2024) -->
-                        <article class="story-card-thumb">
-                            <img src="IMG_0002-1-scaled.jpg" alt="Classroom" class="story-thumb" loading="lazy">
-                            <div class="story-content-thumb">
-                                <span class="story-tag">College & Career</span>
-                                <h3 class="story-title">
-                                    <a href="https://edsource.org/2024/most-california-high-school-seniors-shut-out-of-even-applying-to-the-states-universities/705635" target="_blank" rel="noopener">
-                                        Most California high school seniors shut out of even applying to the state's universities
-                                    </a>
-                                </h3>
-                                <p class="story-excerpt">While 86% of seniors graduate from high school, most — 56% in 2023 — do not complete their A-G requirements.</p>
-                                <span class="story-date">February 12, 2024</span>
-                            </div>
-                        </article>
-                    </div>
+                    <!-- 4. May 1, 2024 - Adult Literacy -->
+                    <article class="story-card-thumb">
+                        <img src="IMG_9905-2048x1536.jpg" alt="Adult literacy" class="story-thumb" loading="lazy">
+                        <div class="story-content-thumb">
+                            <span class="story-tag">Adult Literacy</span>
+                            <h3 class="story-title">
+                                <a href="https://edsource.org/2024/3-out-of-10-california-adults-struggle-with-basic-reading/710702" target="_blank" rel="noopener">
+                                    3 out of 10 California adults struggle with basic reading
+                                </a>
+                            </h3>
+                            <p class="story-excerpt">An estimated 28% of adults have such poor literacy in English that they struggle with basic tasks.</p>
+                            <span class="story-date">May 1, 2024</span>
+                        </div>
+                    </article>
 
-                    <!-- Right Column -->
-                    <div class="column-right">
-                        <!-- Story 5 - Adult Literacy (2024) -->
-                        <article class="story-card-thumb">
-                            <img src="IMG_9905-2048x1536.jpg" alt="Adult literacy" class="story-thumb" loading="lazy">
-                            <div class="story-content-thumb">
-                                <span class="story-tag">Adult Literacy</span>
-                                <h3 class="story-title">
-                                    <a href="https://edsource.org/2024/3-out-of-10-california-adults-struggle-with-basic-reading/710702" target="_blank" rel="noopener">
-                                        3 out of 10 California adults struggle with basic reading
-                                    </a>
-                                </h3>
-                                <p class="story-excerpt">An estimated 28% of adults have such poor literacy in English that they struggle with basic tasks.</p>
-                                <span class="story-date">May 1, 2024</span>
-                            </div>
-                        </article>
+                    <!-- 5. February 12, 2024 - A-G Requirements -->
+                    <article class="story-card-thumb">
+                        <img src="IMG_0002-1-scaled.jpg" alt="Classroom" class="story-thumb" loading="lazy">
+                        <div class="story-content-thumb">
+                            <span class="story-tag">College & Career</span>
+                            <h3 class="story-title">
+                                <a href="https://edsource.org/2024/most-california-high-school-seniors-shut-out-of-even-applying-to-the-states-universities/705635" target="_blank" rel="noopener">
+                                    Most California high school seniors shut out of even applying to the state's universities
+                                </a>
+                            </h3>
+                            <p class="story-excerpt">While 86% of seniors graduate from high school, most — 56% in 2023 — do not complete their A-G requirements.</p>
+                            <span class="story-date">February 12, 2024</span>
+                        </div>
+                    </article>
 
-                        <!-- Story 6 - Flooding (2023) -->
-                        <article class="story-card-thumb">
-                            <img src="IMG-7541-scaled.jpg" alt="Looking out at a rising river" class="story-thumb" loading="lazy">
-                            <div class="story-content-thumb">
-                                <span class="story-tag">School facilities</span>
-                                <h3 class="story-title">
-                                    <a href="https://edsource.org/2023/how-a-central-valley-school-district-prepares-for-the-terrifying-threat-of-disastrous-flooding/688014" target="_blank" rel="noopener">
-                                        How a Central Valley school district prepares for the terrifying threat of disastrous flooding
-                                    </a>
-                                </h3>
-                                <p class="story-excerpt">A superintendent walks a fine line between ensuring readiness without creating anxiety.</p>
-                                <span class="story-date">April 5, 2023</span>
-                            </div>
-                        </article>
+                    <!-- 6. April 5, 2023 - Flooding -->
+                    <article class="story-card-thumb">
+                        <img src="IMG-7541-scaled.jpg" alt="Looking out at a rising river" class="story-thumb" loading="lazy">
+                        <div class="story-content-thumb">
+                            <span class="story-tag">School facilities</span>
+                            <h3 class="story-title">
+                                <a href="https://edsource.org/2023/how-a-central-valley-school-district-prepares-for-the-terrifying-threat-of-disastrous-flooding/688014" target="_blank" rel="noopener">
+                                    How a Central Valley school district prepares for the terrifying threat of disastrous flooding
+                                </a>
+                            </h3>
+                            <p class="story-excerpt">A superintendent walks a fine line between ensuring readiness without creating anxiety.</p>
+                            <span class="story-date">April 5, 2023</span>
+                        </div>
+                    </article>
 
-                        <!-- Story 7 - Libraries (2022) -->
-                        <article class="story-card-thumb">
-                            <img src="Planada7.jpg" alt="Mobile library" class="story-thumb" loading="lazy">
-                            <div class="story-content-thumb">
-                                <span class="story-tag">Equity</span>
-                                <h3 class="story-title">
-                                    <a href="https://edsource.org/2022/cities-and-towns-across-california-only-get-the-libraries-they-can-afford/677969" target="_blank" rel="noopener">
-                                        Cities and towns across California only get the libraries they can afford
-                                    </a>
-                                </h3>
-                                <p class="story-excerpt">Vast disparities in California's libraries mirror the state's yawning equity gaps.</p>
-                                <span class="story-date">September 20, 2022</span>
-                            </div>
-                        </article>
+                    <!-- 7. September 20, 2022 - Libraries -->
+                    <article class="story-card-thumb">
+                        <img src="Planada7.jpg" alt="Mobile library" class="story-thumb" loading="lazy">
+                        <div class="story-content-thumb">
+                            <span class="story-tag">Equity</span>
+                            <h3 class="story-title">
+                                <a href="https://edsource.org/2022/cities-and-towns-across-california-only-get-the-libraries-they-can-afford/677969" target="_blank" rel="noopener">
+                                    Cities and towns across California only get the libraries they can afford
+                                </a>
+                            </h3>
+                            <p class="story-excerpt">Vast disparities in California's libraries mirror the state's yawning equity gaps.</p>
+                            <span class="story-date">September 20, 2022</span>
+                        </div>
+                    </article>
 
-                        <!-- Story 8 - School Closure (2021) -->
-                        <article class="story-card-thumb">
-                            <img src="belridge.jpg" alt="School Closure" class="story-thumb" loading="lazy">
-                            <div class="story-content-thumb">
-                                <span class="story-tag">School Funding</span>
-                                <h3 class="story-title">
-                                    <a href="https://www.bakersfield.com/news/belridge-elementary-a-district-built-on-oil-shuts-down-after-too-many-years-in-a/article_044f65fa-e10a-11eb-83bc-6b984231bb9d.html" target="_blank" rel="noopener">
-                                        Belridge Elementary, a district built on oil, shuts down
-                                    </a>
-                                </h3>
-                                <p class="story-excerpt">When oil prices hit the skids, so did the school budget.</p>
-                                <span class="story-date">July 10, 2021</span>
-                            </div>
-                        </article>
-                    </div>
+                    <!-- 8. July 10, 2021 - Belridge -->
+                    <article class="story-card-thumb">
+                        <img src="belridge.jpg" alt="School Closure" class="story-thumb" loading="lazy">
+                        <div class="story-content-thumb">
+                            <span class="story-tag">School Funding</span>
+                            <h3 class="story-title">
+                                <a href="https://www.bakersfield.com/news/belridge-elementary-a-district-built-on-oil-shuts-down-after-too-many-years-in-a/article_044f65fa-e10a-11eb-83bc-6b984231bb9d.html" target="_blank" rel="noopener">
+                                    Belridge Elementary, a district built on oil, shuts down
+                                </a>
+                            </h3>
+                            <p class="story-excerpt">When oil prices hit the skids, so did the school budget.</p>
+                            <span class="story-date">July 10, 2021</span>
+                        </div>
+                    </article>
+
                 </div>
             </div>
         </section>

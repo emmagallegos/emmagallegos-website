@@ -275,7 +275,7 @@ body {
     margin-bottom: 3rem;
     color: var(--color-primary);
     padding-bottom: 0.75rem;
-    border-bottom: 3px solid var(--color-accent);
+    border-bottom: 3px solid #ccc;
 }
 
 /* Two Equal Columns */
@@ -301,7 +301,7 @@ body {
 
 .story-card-thumb.featured-story {
     padding: 2.5rem 0;
-    border-bottom: 2px solid var(--color-accent);
+    border-bottom: 2px solid #ccc;
 }
 
 .story-card-thumb:hover {

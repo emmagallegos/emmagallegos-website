@@ -8,6 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Override the gold border with gray */
+        .main-heading {
+            border-bottom: 3px solid #ccc;
+        }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -35,24 +41,9 @@
                 <div class="two-columns-equal">
                     <!-- Left Column -->
                     <div class="column-left">
-                        <!-- Story 1 - Teacher of the Year (December 22, 2025) - FEATURED -->
+                        <!-- Story 1 - Top Featured (July 2025) -->
                         <article class="story-card-thumb featured-story">
-                            <img src="heather3-2048x1536.jpg" alt="Heather Povinelli, California Teacher of the Year" class="story-thumb" loading="lazy">
-                            <div class="story-content-thumb">
-                                <span class="story-tag">Profile</span>
-                                <h3 class="story-title">
-                                    <a href="https://edsource.org/2025/california-teacher-of-the-year/747464" target="_blank" rel="noopener">
-                                        Her dwarfism once scared her away from teaching — now it's her strength
-                                    </a>
-                                </h3>
-                                <p class="story-excerpt">Heather Povinelli was named one of five California Teachers of the Year.</p>
-                                <span class="story-date">December 22, 2025</span>
-                            </div>
-                        </article>
-
-                        <!-- Story 2 - Civil Rights (July 16, 2025) -->
-                        <article class="story-card-thumb">
-                            <img src="23337016321774-2048x1365-1.jpg" alt="U.S. Department of Education building" class="story-thumb" loading="lazy">
+                            <img src="https://edsource.org/wp-content/uploads/2024/11/23337016321774-300x200.jpg" alt="Civil Rights" class="story-thumb" loading="lazy">
                             <div class="story-content-thumb">
                                 <span class="story-tag">Civil Rights</span>
                                 <h3 class="story-title">
@@ -61,28 +52,61 @@
                                     </a>
                                 </h3>
                                 <p class="story-excerpt">The U.S. Supreme Court's decision to allow mass layoffs in the Department of Education stalls pending cases.</p>
-                                <span class="story-date">July 16, 2025</span>
+                                <span class="story-date">July 2025</span>
                             </div>
                         </article>
 
-                        <!-- Story 3 - Navy/College Credit (December 18, 2024) -->
+                        <!-- Story 2 - Teacher of the Year (December 2025) -->
+                        <article class="story-card-thumb">
+                            <img src="https://edsource.org/wp-content/uploads/2025/12/heather3-300x200.jpg" alt="Teacher" class="story-thumb" loading="lazy">
+                            <div class="story-content-thumb">
+                                <span class="story-tag">Feature</span>
+                                <h3 class="story-title">
+                                    <a href="https://edsource.org/2025/california-teacher-of-the-year/747464" target="_blank" rel="noopener">
+                                        Her dwarfism once scared her away from teaching — now it's her strength
+                                    </a>
+                                </h3>
+                                <p class="story-excerpt">Heather Povinelli was named one of five California Teachers of the Year.</p>
+                                <span class="story-date">December 2025</span>
+                            </div>
+                        </article>
+
+                        <!-- Story 3 - Navy Nuclear Reactor (December 2024) -->
                         <article class="story-card-thumb">
                             <img src="image1-2048x1536.jpeg" alt="Navy veteran on aircraft carrier" class="story-thumb" loading="lazy">
                             <div class="story-content-thumb">
-                                <span class="story-tag">College Credit</span>
+                                <span class="story-tag">College & Career</span>
                                 <h3 class="story-title">
                                     <a href="https://edsource.org/2024/she-operated-a-nuclear-reactor-in-the-navy-but-her-college-made-her-take-introductory-chemistry/723779" target="_blank" rel="noopener">
-                                        Why many colleges are giving more credit for learning outside the classroom
+                                        She operated a nuclear reactor in the Navy. But her college made her take introductory chemistry.
                                     </a>
                                 </h3>
                                 <p class="story-excerpt">When students start college later in life, they often bring unique knowledge and skills. California colleges are working on ways to award credit for learning outside the classroom.</p>
-                                <span class="story-date">December 18, 2024</span>
+                                <span class="story-date">December 2024</span>
                             </div>
                         </article>
 
-                        <!-- Story 4 - Adult Literacy (May 1, 2024) -->
+                        <!-- Story 4 - A-G Requirements (2024) -->
                         <article class="story-card-thumb">
-                            <img src="IMG_9905-2048x1536.jpg" alt="Adult literacy education" class="story-thumb" loading="lazy">
+                            <img src="https://edsource.org/wp-content/uploads/2024/10/DSC03889-300x200.jpg" alt="A-G Requirements" class="story-thumb" loading="lazy">
+                            <div class="story-content-thumb">
+                                <span class="story-tag">College & Career</span>
+                                <h3 class="story-title">
+                                    <a href="https://edsource.org/2024/most-california-high-school-seniors-shut-out-of-even-applying-to-the-states-universities/705635" target="_blank" rel="noopener">
+                                        Most California high school seniors shut out of even applying to the state's universities
+                                    </a>
+                                </h3>
+                                <p class="story-excerpt">While 86% of seniors graduate from high school, most — 56% in 2023 — do not complete their A-G requirements.</p>
+                                <span class="story-date">2024</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="column-right">
+                        <!-- Story 5 - Adult Literacy (2024) -->
+                        <article class="story-card-thumb">
+                            <img src="https://edsource.org/wp-content/uploads/2024/04/IMG_2915-300x225.jpg" alt="Adult Literacy" class="story-thumb" loading="lazy">
                             <div class="story-content-thumb">
                                 <span class="story-tag">Adult Literacy</span>
                                 <h3 class="story-title">
@@ -91,70 +115,52 @@
                                     </a>
                                 </h3>
                                 <p class="story-excerpt">An estimated 28% of adults have such poor literacy in English that they struggle with basic tasks.</p>
-                                <span class="story-date">May 1, 2024</span>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Right Column -->
-                    <div class="column-right">
-                        <!-- Story 5 - A-G Requirements (February 12, 2024) -->
-                        <article class="story-card-thumb">
-                            <img src="IMG_0002-1-scaled.jpg" alt="California high school students" class="story-thumb" loading="lazy">
-                            <div class="story-content-thumb">
-                                <span class="story-tag">A-G Requirements</span>
-                                <h3 class="story-title">
-                                    <a href="https://edsource.org/2024/most-california-high-school-seniors-shut-out-of-even-applying-to-the-states-universities/705635" target="_blank" rel="noopener">
-                                        Most California high school seniors shut out of even applying to the state's universities
-                                    </a>
-                                </h3>
-                                <p class="story-excerpt">While 86% of seniors graduate from high school, most — 56% in 2023 — do not complete their A-G requirements.</p>
-                                <span class="story-date">February 12, 2024</span>
+                                <span class="story-date">2024</span>
                             </div>
                         </article>
 
-                        <!-- Story 6 - Flooding (April 5, 2023) -->
+                        <!-- Story 6 - Flooding (2023) -->
                         <article class="story-card-thumb">
-                            <img src="IMG-7541-scaled.jpg" alt="Central Valley flooding" class="story-thumb" loading="lazy">
+                            <img src="https://edsource.org/wp-content/uploads/2023/03/DSC_0018-2-300x200.jpg" alt="Flooding" class="story-thumb" loading="lazy">
                             <div class="story-content-thumb">
-                                <span class="story-tag">Climate & Safety</span>
+                                <span class="story-tag">Climate</span>
                                 <h3 class="story-title">
                                     <a href="https://edsource.org/2023/how-a-central-valley-school-district-prepares-for-the-terrifying-threat-of-disastrous-flooding/688014" target="_blank" rel="noopener">
                                         How a Central Valley school district prepares for the terrifying threat of disastrous flooding
                                     </a>
                                 </h3>
                                 <p class="story-excerpt">A superintendent walks a fine line between ensuring readiness without creating anxiety.</p>
-                                <span class="story-date">April 5, 2023</span>
+                                <span class="story-date">2023</span>
                             </div>
                         </article>
 
-                        <!-- Story 7 - Libraries (September 20, 2022) -->
+                        <!-- Story 7 - Libraries (2022) -->
                         <article class="story-card-thumb">
-                            <img src="Planada7.jpg" alt="Merced County Library Bookmobile" class="story-thumb" loading="lazy">
+                            <img src="https://edsource.org/wp-content/uploads/2025/12/IMG_1563-300x200.png" alt="Libraries" class="story-thumb" loading="lazy">
                             <div class="story-content-thumb">
-                                <span class="story-tag">Libraries & Equity</span>
+                                <span class="story-tag">Equity</span>
                                 <h3 class="story-title">
                                     <a href="https://edsource.org/2022/cities-and-towns-across-california-only-get-the-libraries-they-can-afford/677969" target="_blank" rel="noopener">
                                         Cities and towns across California only get the libraries they can afford
                                     </a>
                                 </h3>
                                 <p class="story-excerpt">Vast disparities in California's libraries mirror the state's yawning equity gaps.</p>
-                                <span class="story-date">September 20, 2022</span>
+                                <span class="story-date">2022</span>
                             </div>
                         </article>
 
-                        <!-- Story 8 - School Closure (July 10, 2021) -->
+                        <!-- Story 8 - School Closure (2021) -->
                         <article class="story-card-thumb">
-                            <img src="belridge.jpg" alt="Belridge Elementary School" class="story-thumb" loading="lazy">
+                            <img src="https://edsource.org/wp-content/uploads/2021/07/Belridge-Elementary-School-1-300x169.jpg" alt="School Closure" class="story-thumb" loading="lazy">
                             <div class="story-content-thumb">
-                                <span class="story-tag">School Closures</span>
+                                <span class="story-tag">School Funding</span>
                                 <h3 class="story-title">
                                     <a href="https://www.bakersfield.com/news/belridge-elementary-a-district-built-on-oil-shuts-down-after-too-many-years-in-a/article_044f65fa-e10a-11eb-83bc-6b984231bb9d.html" target="_blank" rel="noopener">
                                         Belridge Elementary, a district built on oil, shuts down
                                     </a>
                                 </h3>
                                 <p class="story-excerpt">When oil prices hit the skids, so did the school budget.</p>
-                                <span class="story-date">July 10, 2021</span>
+                                <span class="story-date">2021</span>
                             </div>
                         </article>
                     </div>
@@ -168,6 +174,9 @@
             <div class="social-links">
                 <a href="https://www.facebook.com/emmagallegos/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="https://twitter.com/emmagallegos" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
                 </a>
                 <a href="https://www.linkedin.com/in/emma-gallegos-652ab9174/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
